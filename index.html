@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rod Neufeld | Systems, Workflows, Data</title>
+  <meta name="description"
+    content="Rod Neufeld — Systems Analyst. I find where systems lose time, money, and adoption, and fix both the system and the conditions it lands in." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="hero section section-dark">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <img class="avatar" src="assets/images/profile-headshot.jpeg" alt="Rod Neufeld headshot" />
+
+        <p class="eyebrow">Rod Neufeld</p>
+        <h1 class="hero-title accent">
+          I find where systems lose time, money, and adoption —<br>
+          and fix both the system and the conditions it lands in.
+        </h1>
+
+        <div class="hero-metrics">
+          <p>Scaled validation pipelines processing ~30,000 assets annually</p>
+          <p>Reduced manual workflow effort by ~60% through automation</p>
+          <p>Designed <span class="proprietary-term">Workflow Accounting<sup class="term-tm">™</sup></span> — GAAP-compliant financial tracking completed in under 60 seconds at point of transaction</p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-stack">
+          <span>SYSTEMS</span>
+          <span>WORKFLOWS</span>
+          <span>DATA</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-light section-title-only">
+      <div class="container narrow center">
+        <h2 class="section-title accent">Data Systems &amp; ETL</h2>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container two-col">
+        <div class="content-card">
+          <h3 class="project-title">ETL &amp; Data Pipeline Project</h3>
+          <p class="project-subtitle">Transforming legacy DBF data into a structured, relational system</p>
+
+          <div class="content-block">
+            <h4>Problem</h4>
+            <p>Legacy data stored in DBF files was inconsistent, incomplete, and difficult to use for analysis or
+              decision-making.</p>
+            <p>Poor data quality and lack of structure limited visibility into trends and made reporting unreliable.</p>
+          </div>
+
+          <div class="content-block">
+            <h4>Approach</h4>
+            <p>Designed and implemented a Python-based ETL pipeline to extract, clean, and normalize data, map
+              relationships across entities, and load it into a structured SQLite database.</p>
+          </div>
+
+          <div class="content-block">
+            <h4>What I Built</h4>
+            <ul>
+              <li>Extracted and consolidated data from multiple legacy DBF sources</li>
+              <li>Normalized inconsistent records and resolved data quality issues</li>
+              <li>Modeled relationships across households, individuals, donations, and allocations</li>
+              <li>Implemented validation checks ensuring consistency between totals, splits, and payments</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h4>Outcome</h4>
+            <ul>
+              <li>Transformed unusable data into a reliable dataset</li>
+              <li>Enabled downstream analytics and reporting workflows (Power BI)</li>
+              <li>Created a repeatable pipeline for ongoing data processing</li>
+              <li>Improved visibility into trends and data quality issues</li>
+              <li>Reconciliation checks surfaced inconsistencies in legacy financial data during migration</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="visual-card">
+          <img src="assets/images/etl-project-screenshot.png" alt="ETL project screenshot" />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container narrow center">
+        <p class="transition-line accent">Good data and broken workflows produce the same outcome — decisions made in the dark.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+
+        <div class="center intro-block">
+          <h2 class="project-title">Automation &amp; Validation Systems</h2>
+          <p class="project-subtitle">Electronic Arts — Pipeline Design &amp; Workflow Transformation</p>
+          <p class="lead-copy">Embedded at EA via Keywords Studios for 2.5 years as Technical Development Support, working across distributed production and QA teams on a large-scale game title validation pipeline. When EA wound down the Keywords contract, I was one of ~50 retained from a team of 180.</p>
+        </div>
+
+        <div class="visual-wide">
+          <img src="assets/images/ea-pipeline-screenshot.png" alt="Electronic Arts pipeline architecture diagram" />
+        </div>
+
+        <div class="two-col gap-large top-space">
+          <div class="content-card">
+            <h4>What I Owned</h4>
+            <p>I defined the end-to-end requirements and architecture for an automated validation pipeline processing 30,000+ assets annually. The core problem was structural: manual validation was inconsistent, unscalable, and produced no visibility into failure patterns.</p>
+            <p>I designed the integration between Jira-based intake, Jenkins-driven validation across CI infrastructure, and downstream asset capture — structured to reduce manual intervention, surface data quality issues early, and scale across high-volume production cycles.</p>
+            <p>I incorporated forward-looking requirements for ML-assisted automated testing, recognizing that near-term ROI would come from capture automation while the ML layer required a longer runway.</p>
+            <ul>
+              <li>CI infrastructure scaled from 2 to 5 Jenkins farms, reducing processing time from ~48 hours to under 24</li>
+              <li>Full implementation projected to reduce manual testing effort by 75–80%</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="content-card">
+              <h4>What Happened — and What I Learned</h4>
+              <p>The system was deployed into FC25 peak crunch: two weeks of 10-hour days, the highest asset volume of the year, with testers simultaneously switching from manual to automated workflows under maximum delivery pressure.</p>
+              <p>Training had been solid. The system was not broken. What surfaced were pre-existing upstream data issues — siloed across continental teams, invisible until load exposed them — that couldn't be diagnosed or resolved mid-crunch. The team sidelined the automation because they had no margin to troubleshoot it when they needed it most.</p>
+              <p>Even so, the core workflow assistance that did run showed a consistent 60% reduction in testing time.</p>
+              <p>That experience sharpened something I carry into every project now: a well-designed system deployed at the moment of maximum organizational stress will fail regardless of its quality. Change management timing is not a soft consideration — it is a delivery risk on par with the technical work itself.</p>
+            </div>
+
+            <div class="content-card top-space-small">
+              <h4>Outcome</h4>
+              <p>A separate team — building a greenfield FC sub-title with a longer release window — adopted the full system. They worked through the ML growing pains on a timeline that allowed for it, and shipped.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+    ARCHIVED EA COPY — preserved for reference
+
+    <div class="three-up content-grid">
+      Context: Supported the rollout and adoption of automated validation workflows within large-scale production
+      environments, where reliability, consistency, and cross-team coordination directly impacted delivery timelines.
+
+      Problem: Manual validation processes were time-consuming, inconsistent, and difficult to scale across distributed
+      teams. Lack of standardization and visibility created bottlenecks, reduced confidence in outputs, and slowed delivery.
+
+      Approach: Contributed to the implementation and adoption of automated validation pipelines, working across
+      engineering, production, and operations teams to improve workflow clarity, system reliability, and execution consistency.
+    </div>
+
+    What I Worked On:
+    - Supported validation pipelines processing ~30,000 assets annually
+    - Contributed to workflow improvements reducing manual validation effort by ~60%
+    - Assisted in scaling CI infrastructure from 2 to 5 Jenkins farms, reducing processing time from ~48 hours to under 24 hours
+    - Coordinated issue escalation across engineering and production teams
+    - Documented workflow dependencies, risks, and operational procedures
+    - Supported onboarding of teams to new automation workflows
+
+    Outcome:
+    - Improved reliability and consistency of validation workflows
+    - Reduced manual effort and increased operational efficiency
+    - Increased visibility into system performance and failure points
+    - Enabled teams to adopt and trust automated processes at scale
+    - Worked within multi-team environments where workflow clarity and system reliability directly impacted delivery outcomes
+    -->
+
+    <section class="section section-dark">
+      <div class="container narrow center">
+        <p class="transition-line accent">The same problems exist in every industry — invisible bottlenecks, workflows that fight the people using them, and systems deployed without accounting for how humans actually behave.</p>
+      </div>
+    </section>
+
+    <section class="section section-light section-divider">
+      <div class="container narrow center">
+        <h2 class="section-title accent">Product &amp; System Design<br>NeverØwe</h2>
+        <p class="lead-copy">Designed and built from lived experience — a financial system built around how self-employed people actually work, not how accountants wish they would.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container two-col align-start">
+        <div class="content-card center-card">
+          <div class="logo-lockup">
+            <img class="logo-mark" src="assets/images/neverowe-logo.png" alt="NeverØwe logo" />
+            <span class="logo-tm">TM</span>
+          </div>
+          <p class="project-subtitle center-text">A real-time financial tracking and obligation management platform for
+            self-employed and gig workers.</p>
+          <p class="tagline">Know what you owe.<br>Control what you spend.</p>
+        </div>
+
+        <div class="visual-card">
+          <img src="assets/images/neverowe-login-preview.png" alt="NeverØwe interface preview" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container three-up content-grid">
+        <div class="content-card">
+          <h4>Why I Built This</h4>
+          <p>Sixteen years as a self-employed contractor taught me something no accounting software addresses: the problem isn't that people don't want to manage their finances — it's that the tools demand behavior that doesn't fit how independent workers actually work.</p>
+        </div>
+
+        <div class="content-card">
+          <h4>The Problem</h4>
+          <p>Tax obligations accumulate invisibly. By the time year-end arrives the number is fixed and the damage is done.</p>
+          <p>Separately, reconciling finances is a second job — EOD, EOW, EOY — that nobody signed up for when they went to work for themselves.</p>
+        </div>
+
+        <div class="content-card">
+          <h4>The Approach</h4>
+          <p>I designed NeverØwe around <span class="proprietary-term">Workflow Accounting<sup class="term-tm">™</sup></span>: GAAP-based with an immutable ledger, but on mobile it's a 60-second entry at the moment of the transaction.</p>
+          <p>When your workday is done, your accounting is done. On a larger screen the full picture is there — tax forecasting, scenario modeling, complete records.</p>
+          <p>You focus on what you're good at. The accounting happens as part of that process, not after it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container nw-layout">
+
+        <div class="nw-row-top">
+          <div class="visual-card nw-visual-primary">
+            <img src="assets/images/neverowe-income-screen.png" alt="NeverØwe income screen" />
+          </div>
+          <div class="content-card nw-card-side">
+            <h4>System Architecture Highlights</h4>
+            <ul>
+              <li>Event-driven data capture aligned with user actions</li>
+              <li>Modular financial processing pipeline (capture → validation → calculation → feedback)</li>
+              <li>Integrated tax estimation and forecasting engine (Compass)</li>
+              <li>Data integrity enforcement through validation layers</li>
+              <li>Real-time feedback loops influencing user decisions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nw-row-bottom">
+          <div class="content-card nw-card-side">
+            <h4>System Design</h4>
+            <p>Designed a modular architecture supporting:</p>
+            <ul>
+              <li>Transaction capture and categorization</li>
+              <li>Tax estimation and forecasting logic</li>
+              <li>Data validation and integrity checks</li>
+              <li>Event-driven workflows tied to user actions</li>
+            </ul>
+            <p>Incorporated forward-looking design for predictive financial modeling (Compass engine), automated
+              compliance support, and real-time feedback loops for user decisions.</p>
+          </div>
+          <div class="visual-card nw-visual-primary">
+            <img src="assets/images/neverowe-expense-screen.png" alt="NeverØwe expense screen" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container three-up content-grid">
+        <div class="content-card">
+          <h4>Platform Implementation</h4>
+          <ul>
+            <li>End-to-end backend API for financial processing and validation</li>
+            <li>Multi-platform frontend (iOS, Android, web, macOS)</li>
+            <li>Integrated services: Supabase, Firebase, Stripe, SendGrid</li>
+            <li>CI/CD pipeline supporting continuous deployment</li>
+            <li>Environment-driven configuration and data handling</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h4>User Workflow</h4>
+          <ul>
+            <li>Quick Select for frequently used accounts</li>
+            <li>Adaptive prioritization (recent + pinned categories)</li>
+            <li>Minimal input required at point of transaction</li>
+            <li>Reduced cognitive load during data entry</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h4>Impact</h4>
+          <ul>
+            <li>Reframed accounting from a retrospective chore into a real-time decision tool</li>
+            <li>Eliminated the year-end tax surprise through continuous obligation tracking</li>
+            <li>Reduced the cognitive cost of financial management to under 60 seconds per transaction</li>
+            <li>Built a foundation that extends into predictive modeling, automated compliance, and scenario planning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container narrow center">
+        <h3 class="section-title accent">Product Overview</h3>
+        <p class="lead-copy">Explore the product design, system architecture, and implementation approach behind
+          NeverØwe.</p>
+        <p><a class="cta-link" href="https://neverowe.com/" target="_blank"
+            rel="noreferrer noopener">Visit NeverØwe &rarr;</a></p>
+      </div>
+    </section>
+  </main>
+
+  <section class="section section-dark contact-section">
+    <div class="container narrow center">
+      <h2 class="section-title accent">Get in Touch</h2>
+      <div class="contact-links">
+        <a class="contact-item" href="mailto:rgneufeld@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">rgneufeld@gmail.com</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/rodgneufeld/" target="_blank" rel="noreferrer noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Rod Neufeld</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container narrow center">
+      <p>© 2026 Rod Neufeld</p>
+      <p class="footer-trademark">NeverØwe™ and associated visuals are proprietary to NeverØwe Technologies Ltd. and may not be used without permission.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
