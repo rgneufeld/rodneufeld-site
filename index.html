@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rod Neufeld | Systems, Workflows, Data</title>
+  <title>Rod Neufeld | Systems &amp; Workflow Automation</title>
   <meta name="description"
-    content="Rod Neufeld — Systems Analyst. I find where systems lose time, money, and adoption, and fix both the system and the conditions it lands in." />
+    content="Rod Neufeld — Systems &amp; Workflow Automation. I identify where systems break in real-world conditions and redesign them to perform under load, scale, and human use." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -22,15 +22,17 @@
         <img class="avatar" src="assets/images/profile-headshot.jpeg" alt="Rod Neufeld headshot" />
 
         <p class="eyebrow">Rod Neufeld</p>
+        <p class="role-title">Systems &amp; Workflow Automation &nbsp;|&nbsp; Operational Execution</p>
         <h1 class="hero-title accent">
-          I find where systems lose time, money, and adoption —<br>
-          and fix both the system and the conditions it lands in.
+          I identify where systems break in real-world conditions —<br>
+          and redesign them to perform under load, scale, and human use.
         </h1>
 
         <div class="hero-metrics">
+          <p class="metrics-label">Selected Impact</p>
           <p>Scaled validation pipelines processing ~30,000 assets annually</p>
           <p>Reduced manual workflow effort by ~60% through automation</p>
-          <p>Designed <span class="proprietary-term">Workflow Accounting<sup class="term-tm">™</sup></span> — GAAP-compliant financial tracking completed in under 60 seconds at point of transaction</p>
+          <p>Designed a workflow-based accounting approach (<span class="proprietary-term">Workflow Accounting<sup class="term-tm">™</sup></span>) enabling GAAP-compliant tracking in under 60 seconds at point of transaction</p>
         </div>
       </div>
 
@@ -44,51 +46,67 @@
     </div>
   </header>
 
+  <section class="section section-dark what-i-solve-section">
+    <div class="container narrow center">
+      <h2 class="section-title accent">What I Solve</h2>
+      <ul class="solve-list">
+        <li>Systems that hold up in testing but break under real-world conditions</li>
+        <li>Workflows that are technically correct but fight the people actually using them</li>
+        <li>Automation that fails at deployment because change management was an afterthought</li>
+        <li>Data pipelines with quality issues that stay invisible until scale exposes them</li>
+        <li>The distance between how a product was designed and how it ends up being used</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container narrow center">
+      <h2 class="section-title accent">Where I Fit</h2>
+      <ul class="solve-list where-i-fit-list">
+        <li><strong>Customer Success &amp; Customer Operations</strong> teams scaling systems across distributed users and growing complexity</li>
+        <li><strong>Product teams</strong> deploying workflows into real-world environments where adoption and reliability matter as much as the build</li>
+        <li><strong>Engineering &amp; Operations teams</strong> bridging the gap between system design and how that system actually performs in production</li>
+      </ul>
+    </div>
+  </section>
+
   <main>
     <section class="section section-light section-title-only">
       <div class="container narrow center">
-        <h2 class="section-title accent">Data Systems &amp; ETL</h2>
+        <h2 class="section-title accent">System Failure &amp; Data Recovery</h2>
       </div>
     </section>
 
     <section class="section section-light">
       <div class="container two-col">
         <div class="content-card">
-          <h3 class="project-title">ETL &amp; Data Pipeline Project</h3>
-          <p class="project-subtitle">Transforming legacy DBF data into a structured, relational system</p>
+          <h3 class="project-title">Legacy System Recovery</h3>
+          <p class="project-subtitle">Rescuing 20 years of financial records from dead software</p>
 
           <div class="content-block">
-            <h4>Problem</h4>
-            <p>Legacy data stored in DBF files was inconsistent, incomplete, and difficult to use for analysis or
-              decision-making.</p>
-            <p>Poor data quality and lack of structure limited visibility into trends and made reporting unreliable.</p>
+            <h4>The Situation</h4>
+            <p>The church treasurer came to me with a crisis. The financial software their organization had relied on for nearly 20 years was dead — unsupported, unrecoverable, and running inside a third-party Windows emulator on a Mac with no original install disk anywhere. Year-end reporting was approaching. Two decades of donation records, household data, and financial allocations were locked inside a format nobody could read anymore.</p>
           </div>
 
           <div class="content-block">
-            <h4>Approach</h4>
-            <p>Designed and implemented a Python-based ETL pipeline to extract, clean, and normalize data, map
-              relationships across entities, and load it into a structured SQLite database.</p>
+            <h4>What I Tried First</h4>
+            <p>Program recovery — restoring the application itself so it could export its own data. That proved impossible. No source, no vendor, no viable path. When the obvious approach fails, you go deeper.</p>
           </div>
 
           <div class="content-block">
-            <h4>What I Built</h4>
+            <h4>What I Did Instead</h4>
+            <p>I went into the raw database files. The software used DBF files — a format from the early 1990s. I reconstructed the schema by reading file headers and cross-referencing field patterns across tables, then built a Python extraction pipeline to pull, normalize, and validate everything.</p>
             <ul>
-              <li>Extracted and consolidated data from multiple legacy DBF sources</li>
-              <li>Normalized inconsistent records and resolved data quality issues</li>
-              <li>Modeled relationships across households, individuals, donations, and allocations</li>
-              <li>Implemented validation checks ensuring consistency between totals, splits, and payments</li>
+              <li>Reconstructed schema from raw DBF file structures with no documentation</li>
+              <li>Built Python pipeline to extract, normalize, and validate 20 years of records</li>
+              <li>Implemented reconciliation checks that surfaced hidden inconsistencies in the legacy data</li>
             </ul>
           </div>
 
           <div class="content-block">
-            <h4>Outcome</h4>
-            <ul>
-              <li>Transformed unusable data into a reliable dataset</li>
-              <li>Enabled downstream analytics and reporting workflows (Power BI)</li>
-              <li>Created a repeatable pipeline for ongoing data processing</li>
-              <li>Improved visibility into trends and data quality issues</li>
-              <li>Reconciliation checks surfaced inconsistencies in legacy financial data during migration</li>
-            </ul>
+            <h4>Outcome &amp; What's Next</h4>
+            <p>Recovered and validated 20 years of financial records across households, donations, and allocations. The treasurer had clean, structured data before year-end.</p>
+            <p>I'm now building a replacement system designed for small church treasurers, with potential distribution across a network of 4,000+ organizations. The same principle applies here that applies everywhere I work: the tool has to fit how the person actually works, not demand they change to fit the tool.</p>
           </div>
         </div>
 
@@ -111,6 +129,15 @@
           <h2 class="project-title">Automation &amp; Validation Systems</h2>
           <p class="project-subtitle">Electronic Arts — Pipeline Design &amp; Workflow Transformation</p>
           <p class="lead-copy">Embedded at EA via Keywords Studios for 2.5 years as Technical Development Support, working across distributed production and QA teams on a large-scale game title validation pipeline. When EA wound down the Keywords contract, I was one of ~50 retained from a team of 180.</p>
+        </div>
+
+        <div class="ea-takeaways">
+          <p class="takeaways-label">Key Takeaways</p>
+          <ul>
+            <li>Automation reduced testing time by ~60% on workflows that ran</li>
+            <li>System failure was tied to deployment timing — not design quality</li>
+            <li>Change management under peak load is a delivery risk equal to the technical work</li>
+          </ul>
         </div>
 
         <div class="visual-wide">
@@ -177,12 +204,6 @@
     - Enabled teams to adopt and trust automated processes at scale
     - Worked within multi-team environments where workflow clarity and system reliability directly impacted delivery outcomes
     -->
-
-    <section class="section section-dark">
-      <div class="container narrow center">
-        <p class="transition-line accent">The same problems exist in every industry — invisible bottlenecks, workflows that fight the people using them, and systems deployed without accounting for how humans actually behave.</p>
-      </div>
-    </section>
 
     <section class="section section-light section-divider">
       <div class="container narrow center">
@@ -320,6 +341,7 @@
   <section class="section section-dark contact-section">
     <div class="container narrow center">
       <h2 class="section-title accent">Get in Touch</h2>
+      <p class="cta-statement">If you're dealing with systems that break under real-world conditions, or workflows that don't scale — let's talk.</p>
       <div class="contact-links">
         <a class="contact-item" href="mailto:rgneufeld@gmail.com">
           <span class="contact-label">Email</span>
