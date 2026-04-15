@@ -737,6 +737,19 @@ a { color: inherit; }
   border-top: 1px solid var(--line-strong);
 }
 
+.post-comments {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+.comments-label {
+  margin: 0 0 24px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted-2);
+}
+
 /* ── End Blog ─────────────────────────────────────── */
 
 .footer-trademark {
