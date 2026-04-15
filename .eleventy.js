@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("blog/Blog_Assets");
 
   // Blog post collection — newest first
   eleventyConfig.addCollection("posts", function(collectionApi) {
