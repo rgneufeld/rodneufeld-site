@@ -538,6 +538,207 @@ a { color: inherit; }
   line-height: 1.35;
 }
 
+/* ── Blog ─────────────────────────────────────────── */
+
+.site-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 18px 24px;
+  z-index: 10;
+}
+.site-nav a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+.back-link:hover {
+  color: var(--accent);
+}
+
+.blog-index-header {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+.blog-tagline {
+  margin: 18px 0 0;
+  max-width: 58ch;
+  font-size: 1.12rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.post-list {
+  display: grid;
+  gap: 20px;
+}
+.post-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+.post-card:hover {
+  border-color: rgba(32,206,136,0.35);
+  background: rgba(32,206,136,0.05);
+  transform: translateY(-2px);
+}
+.post-card-link {
+  display: block;
+  padding: 26px 30px;
+  text-decoration: none;
+  color: inherit;
+}
+.post-card-date {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+.post-card-title {
+  margin: 0 0 10px;
+  font-family: Oswald, Inter, sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--accent);
+}
+.post-card-description {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 68ch;
+}
+.post-card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.no-posts {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.post-header {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+.post-description {
+  margin: 18px 0 0;
+  max-width: 58ch;
+  font-size: 1.12rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.post-content {
+  max-width: 70ch;
+}
+.post-content h2 {
+  margin: 2em 0 0.6em;
+  font-family: Oswald, Inter, sans-serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1.15;
+}
+.post-content h3 {
+  margin: 1.6em 0 0.5em;
+  font-family: Oswald, Inter, sans-serif;
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  font-weight: 500;
+  color: var(--accent-2);
+}
+.post-content p {
+  margin: 0 0 1.3em;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+.post-content ul,
+.post-content ol {
+  margin: 0 0 1.3em;
+  padding-left: 22px;
+}
+.post-content li {
+  margin-bottom: 0.5em;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+.post-content strong {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+.post-content blockquote {
+  margin: 1.5em 0;
+  padding: 14px 20px;
+  border-left: 3px solid var(--accent);
+  background: rgba(32,206,136,0.06);
+  border-radius: 0 8px 8px 0;
+  color: var(--accent-2);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+.post-content blockquote p {
+  margin: 0;
+  color: inherit;
+}
+.post-content code {
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 0.9em;
+  background: rgba(255,255,255,0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--accent-2);
+}
+.post-content pre {
+  margin: 1.5em 0;
+  padding: 20px 24px;
+  background: var(--bg-deep);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+.post-content pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.post-content hr {
+  margin: 2.5em 0;
+  border: none;
+  border-top: 1px solid var(--line-strong);
+}
+
+/* ── End Blog ─────────────────────────────────────── */
+
 .footer-trademark {
   margin-top: 8px !important;
   font-size: 0.82rem !important;

@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<div class="post-wrap">
+  <header class="post-header section section-dark">
+    <div class="container narrow">
+      <a class="back-link" href="/blog">&larr; All Posts</a>
+      <p class="eyebrow">
+        <time datetime="{{ date | isoDate }}">{{ date | dateFilter }}</time>
+      </p>
+      <h1 class="hero-title accent">{{ title }}</h1>
+      {% if description %}
+      <p class="post-description">{{ description }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-body section section-light">
+    <div class="container narrow post-content">
+      {{ content | safe }}
+    </div>
+  </div>
+</div>

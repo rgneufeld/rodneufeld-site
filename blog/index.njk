@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Blog
+description: A practical, systems-focused publication on how AI actually gets deployed inside real organizations — workflow optimization, operational reliability, and automation architecture.
+---
+<header class="section section-dark blog-index-header">
+  <div class="container narrow">
+    <a class="back-link" href="/">&larr; Rod Neufeld</a>
+    <p class="eyebrow">Rod Neufeld</p>
+    <h1 class="hero-title accent">AI in Operations</h1>
+    <p class="blog-tagline">Not the voice of reason. Just not an unreasonable one.</p>
+  </div>
+</header>
+
+<main class="section section-light">
+  <div class="container narrow">
+    {% if collections.posts.length %}
+      <div class="post-list">
+        {% for post in collections.posts %}
+        <article class="post-card">
+          <a class="post-card-link" href="{{ post.url }}">
+            <p class="post-card-date">
+              <time datetime="{{ post.date | isoDate }}">{{ post.date | dateFilter }}</time>
+            </p>
+            <h2 class="post-card-title">{{ post.data.title }}</h2>
+            {% if post.data.description %}
+            <p class="post-card-description">{{ post.data.description }}</p>
+            {% endif %}
+            <span class="post-card-cta">Read &rarr;</span>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="no-posts">First post coming Monday.</p>
+    {% endif %}
+  </div>
+</main>
