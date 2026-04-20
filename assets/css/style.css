@@ -679,6 +679,31 @@ a { color: inherit; }
   padding-top: 56px;
   padding-bottom: 72px;
 }
+
+/* Post header with hero image */
+.post-header-with-image {
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  gap: 40px;
+  align-items: center;
+  max-width: 880px;
+}
+.post-header-text { min-width: 0; }
+.post-header-image {
+  width: 270px;
+  overflow: hidden;
+}
+.post-header-image img {
+  width: 270px !important;
+  max-width: none !important;
+  height: auto;
+  border-radius: 14px;
+}
+
+@media (max-width: 640px) {
+  .post-header-image { display: none; }
+}
+
 .post-description {
   margin: 18px 0 0;
   max-width: 58ch;
